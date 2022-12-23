@@ -1,0 +1,9 @@
+#footer {
+  backdrop-filter: blur(10px);
+}
+
+.connect_btn {
+  width: 200px !important;
+  height: 50px !important;
+}
+
