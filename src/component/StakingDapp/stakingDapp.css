@@ -1,0 +1,66 @@
+.mint_content {
+  background: radial-gradient(#282836, #19193d);
+  box-shadow: 0 0 1px 1px #17b2ff !important;
+}
+
+.staking_content {
+  background: radial-gradient(#282836, #19193d);
+  box-shadow: 0 0 1px 1px #17b2ff !important;
+}
+.stakingList_content {
+  background: radial-gradient(#282836, #19193d);
+  box-shadow: 0 0 1px 1px #17b2ff !important;
+  min-height: 300px !important;
+}
+.authorize_btn {
+  width: 250px !important;
+  height: 40px !important;
+}
+
+.verify_btn {
+  width: 150px !important;
+  height: 35px !important;
+}
+
+.unstakeAll_btn {
+  width: 150px !important;
+  height: 35px !important;
+}
+
+.decrease_btn {
+  background:rgba(255, 255, 255, 0.27);
+  height: 30px !important;
+}
+
+.earned_btn {
+  width: 150px !important;
+  height: 35px !important;
+}
+
+.mintTokenSelect {
+  background-color:rgba(255, 255, 255, 0.27) !important;
+  opacity: 80%;
+  border-radius: 10px;
+}
+
+.nftCard {
+   box-shadow: 0 0 1px 1px #17b2ff !important;
+   border-radius: 9px;
+}
+
+@keyframes glow2 {
+  from {
+    box-shadow: 0 0 4px -1px #f4dc76;
+  }
+
+  to {
+    box-shadow: 0 0 10px 4px #ffb300;
+  }
+}
+
+.stakegoldeffect {
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-weight: 300;
+  animation: glow2 1s infinite alternate;
+}
