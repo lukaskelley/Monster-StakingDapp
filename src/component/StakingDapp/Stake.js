@@ -167,9 +167,11 @@ const StakeComponent = ({ stakingContract }) => {
                       />
                     ))}
                   </div>
-                  <h1 className="font-bold mt-20 text-center text-white">
-                    Nothing to Show ☹
-                  </h1>
+                  {stakedArray.length === 0 && (
+                    <h1 className="font-bold mt-20 text-center text-white">
+                      Nothing to Show ☹
+                    </h1>
+                  )}
                 </div>
               )}
             </>

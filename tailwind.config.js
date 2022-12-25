@@ -1,5 +1,4 @@
 const colors = require("tailwindcss/colors");
-const withMT = require("@material-tailwind/react/utils/withMT");
 module.exports = {
   purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   darkMode: "class", // or 'media' or 'class'
