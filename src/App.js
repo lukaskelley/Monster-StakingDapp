@@ -4,7 +4,6 @@ import StakingDapp from "./component/StakingDapp";
 import AppFooter from "./component/Footer";
 
 import { motion } from "framer-motion";
-
 import "./App.css";
 function App() {
   return (

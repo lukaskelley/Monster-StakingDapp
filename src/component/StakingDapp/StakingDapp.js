@@ -16,7 +16,6 @@ import { useWeb3React } from "@web3-react/core";
 import config from "../../config/config";
 import NFTSTAKINGCONTRACT_ABI from "../../assets/abis/NFTSTAKINGACONTRACT_ABI.json";
 import NFTCONTRACT_ABI from "../../assets/abis/NFTCONTRACT_ABI.json";
-import SDOODCONTRACT_ABI from "../../assets/abis/SDOODCONTRACT_ABI.json";
 
 import { ClassicSpinner } from "react-spinners-kit";
 
@@ -47,15 +46,10 @@ const StakingDapp = () => {
     Signer
   );
 
-  const sdoodTokenContract = new ethers.Contract(
-    config.SDOODCONTRACT_ADDRESS,
-    SDOODCONTRACT_ABI,
-    Signer
-  );
-
   useEffect(() => {
     if (account) {
       getStakedNFTCount();
+      // getMintedCount();
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [account]);
@@ -74,6 +68,11 @@ const StakingDapp = () => {
     setOwnerStakedNftCount(Number(ownerStaked.toString()));
     setTotalStakedNftCount(Number(totalStaked.toString()));
   };
+
+  // const getMintedCount = async () => {
+  //   const count = await nftContract.walletOfOwner(account);
+  //   console.log(Number(count.toString()));
+  // };
 
   const verifyStakedNftCount = () => {
     setVerifyLoadingState(true);

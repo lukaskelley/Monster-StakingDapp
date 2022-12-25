@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useWeb3React } from "@web3-react/core";
 import Button from "../common/button";
 
@@ -70,6 +70,17 @@ const Mint = () => {
         });
     }
   };
+
+  //   const totalSupply = async () => {
+  //     let counts = await nftContract.totalSupply();
+  //     console.log(Number(counts.toString()));
+  //   };
+
+  //   useEffect(() => {
+  //     if (account) {
+  //       totalSupply();
+  //     }
+  //   }, [account]);
 
   return (
     <div className="w-full">
